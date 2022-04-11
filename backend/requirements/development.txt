@@ -1,0 +1,14 @@
+-r _base.txt
+brunette==0.2.5
+django-coverage-plugin==2.0.2
+django-extensions==3.1.5
+django-stubs==1.10.1
+djangorestframework-stubs==1.4.0
+mypy==0.942
+pylint==2.13.4
+pylint-celery==0.3
+pylint-django==2.5.3
+pytest==7.1.1
+pytest-cov==3.0.0
+pytest-django==4.5.2
+pytest-factoryboy==2.1.0

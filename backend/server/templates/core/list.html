@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most visited urls</title>
+</head>
+<body>
+    <h1>Most visited urls</h1>
+    <table>
+        <tr>
+            <th>Posición</th>
+            <th># Visitas</th>
+            <th>Título</th>
+            <th>Url</th>
+          </tr>
+          {% for item in object_list %}
+          <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{item.visited_count}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.slug}}</td>
+            </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>
