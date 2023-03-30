@@ -70,6 +70,7 @@ THIRD_APPS = [
 ]
 
 LOCAL_APPS = [
+    "core.apps.CoreConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + LOCAL_APPS
