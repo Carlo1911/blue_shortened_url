@@ -2,7 +2,7 @@ from django.db import models
 
 
 class ShortenedUrl(models.Model):
-    slug = models.SlugField("Original URL", max_length=100, unique=True)
+    slug = models.CharField("Original URL", max_length=100, unique=True)
     shortened_slug = models.CharField("Shortened URL", max_length=100, unique=True)
     title = models.CharField("Title", max_length=100, blank=True)
     total_visits = models.IntegerField("Total visits", default=0)
