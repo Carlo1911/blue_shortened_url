@@ -49,7 +49,8 @@ urlpatterns = [
 
 # API URLS
 urlpatterns += [
-    # path('api/v1/', include('api.urls')),
+    # TODO: Improve versioning for API
+    path("api/v1/", include("core.urls")),
 ]
 
 if settings.DEBUG:
