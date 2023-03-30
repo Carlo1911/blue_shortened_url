@@ -9,8 +9,8 @@ app.config_from_object("django.conf:settings", namespace="CELERY")
 app.autodiscover_tasks()
 
 app.conf.beat_schedule = {
-    "update-title-from-urls": {
-        "task": "task.core.get_titles_from_urls",
-        "schedule": crontab(hour="*"),
-    },
+    # "update-title-from-urls": {
+    #     "task": "task.core.get_titles_from_urls",
+    #     "schedule": crontab(hour="*"),
+    # },
 }
